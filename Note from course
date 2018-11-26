@@ -619,12 +619,105 @@ For key in students.keys():
 
 ############
 List Comprehention
+############
 #a list comprehension is basically a shortcut method or a bit of shorthand to combine variables
 #for loops and if statements to create a list or to comprehend a list in all one line of code.
 
+############
+FUNCTIONS
+############
+#A function is a block of organised and reusable code that performs
+#an action or give some result.
+
+##########
+VARIABLE SCOPE
+##########
+
+#There are two types global and local. Functions create globals, loops create local
+
+#Things can only be seen within thier scope
+#This Variable is global.
+a = 200
+c = [1,2,3]
+
+def f1():
+    #this variable is local but also using the global
+    # functions become little bubbles of code, working with themselves
+    b = a + 10
+    print(b)
+
+def f2():
+    a =  50
+    print(a)
+          #after the function is run, the variable disapears.
+
+#Here we are changing the global varible 'a' by using the 'global' statement
+def f3():
+    global a
+    a = 10
+    print(a)
+          #after the function is run, the variable disapears.
+
+#Changing parts of a global list/dictonary
+def f4():
+    c[0] = 5
+    print(c)
+
+f1()
+f2()
+f3()
+f4()
+print(a)
+
+####################
+Keyword Arguments & Defalt Parameters
+###################
+
+def about (name, age, likes):
+    sentences = "meet {}, They are {} years old and they like {}".format(name, age, likes)
+    return sentences
+
+#positional argument .. these need to be in the correct order
+print (about("Jack", 23, "Python"))
+#or, keyword argement, they can be in any order
+print (about(age = 23, name = "Jack", likes = "Python"))
+#The differnece, is the first is parameter based and the second is keyword based
+
+#having a default value (the default value NEEDS to go last.
+def about (name, age, likes = "Football"):
+    sentences = "meet {}, They are {} years old and they like {}".format(name, age, likes)
+    return sentences
+
+print (about("Jack", 23,))
+#the default perameter can be overwritten:
+print (about("Jack", 23, "Python"))
+
+####################
+Packing and Unpackig Variables
+###################
+
+* unpacks
+**
 
 
+################
+CLASS
+###############
+a class a template, and when you make and instance of a class
+you get an Object
 
+
+States - Class variables give the object states (state of a coin
+-colour
+-diameter
+-thickness
+-value
+-number of edges
+
+Methods(same as functions but when we talk about 'classes' we call them methods)
+      They are the behaviours of the object(these will change the state of the coin)
+eg.
+-flip()
 
 
 
