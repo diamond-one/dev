@@ -720,5 +720,16 @@ eg.
 -flip()
 
 
+Objects - Have states and methods
+you use variables to make the states
+and fucntions to create the methods
 
+
+To have class methods you need the __init__(self) Constructor
+We also used a __del__(self) Destructor fuction, this removes the object from your code
+
+We learned Inheritance
+Create a general Parent class,
+
+We used the __str__(self) method which cleans up the digital name that an objects gets given
 
