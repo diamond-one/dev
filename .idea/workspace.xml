@@ -221,7 +221,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="666" />
+    <option name="width" value="1051" />
     <option name="height" value="865" />
   </component>
   <component name="ProjectView">
@@ -412,12 +412,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Jupyter Notebook.dev" />
       <item itemvalue="Python.practice" />
       <item itemvalue="Python.OpenAndWrite" />
       <item itemvalue="Python.password_check" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.app1_Bug" />
-      <item itemvalue="Jupyter Notebook.dev" />
     </list>
     <recent_temporary>
       <list>
